@@ -2,5 +2,8 @@
 {% load static %}
 
 {% block content %}
-    <h1>Batsandi Django-Dash</h1>
+    {% load plotly_dash %}
+    <div class="{% plotly_class  name='PlotlySimpleExample' %} card" style="height: 100%; width: 25%" >
+        {% plotly_app name='PlotlySimpleExample' ratio=1.1 %}
+    </div>
 {% endblock %}
